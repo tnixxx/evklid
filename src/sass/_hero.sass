@@ -1,0 +1,43 @@
+.hero
+    position: relative
+    &-info
+        position: absolute
+        max-width: 50%
+        margin-left: 78px
+        padding-bottom: 75px
+
+        &__title
+            font-size: 70px
+            line-height: 86px
+            padding-top: 103px
+            margin-bottom: 32px
+        &__subtitle
+            font-size: 23px
+            line-height: 29px
+            margin-bottom: 97px
+        &__button
+            background: #FF9900   
+            padding: 25px 37px 25px 37px
+            border-radius: 0%
+            &:hover
+                cursor: pointer
+                background: rgba(255, 153, 0, 0.6)
+            &:active
+                background: #E1670E
+            &__text
+                font-size: 23px
+                line-height: 29px
+                font-weight: bold
+                color: white
+    &-slides
+        position: absolute
+@media (max-width: 1680px)
+    .hero
+        &-info
+            max-width: 60%
+@media (max-width: 1386px)
+    .hero
+        &-info
+            padding-bottom: 20px
+            &__subtitle
+                padding-bottom: 0px
